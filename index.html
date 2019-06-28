@@ -114,8 +114,8 @@
       var circleArray = [];
 
       for(var i =0; i< 1000; i++) {
-      var x = Math.random()* (window.innerWidth-radius *2)+ radius;
-      var y = Math.random()* (window.innerHeight - radius *2)+ radius;
+      var x = Math.random()* (window.innerWidth-radius * 2)+ radius;
+      var y = Math.random()* (window.innerHeight - radius * 2)+ radius;
       var dy = (Math.random()-0.5);
       var dx = (Math.random()-0.5);
       var radius = (Math.random()*3 +1);
@@ -127,10 +127,10 @@
         cx.clearRect(0,0,innerWidth, innerHeight);
         
         circleArray.forEach(v => v.update());
-        // for (var i=0; i < circleArray; i++) {
-        //   console.log(i);
-        //   circleArray[i].update();
-        // }
+        for (var i=0; i < circleArray; i++) {
+          console.log(i);
+          circleArray[i].update();
+        }
       }
       animate();
 		</script>
